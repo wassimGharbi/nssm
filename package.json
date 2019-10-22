@@ -1,0 +1,36 @@
+{
+  "name": "@gharbi/nssm",
+  "license": "MIT",
+  "version": "1.0.1",
+  "description": "Perfectly manage windows services using custom Nssm executable",
+  "author": "Wassim Gharbi <gharbi.wass@gmail.com>",
+  "contributors": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wassimGharbi/nssm.git"
+  },
+  "keywords": [
+    "windows",
+    "services",
+    "nssm"
+  ],
+  "dependencies": {
+    "async": "^2.5.0",
+    "win32-api": "^6.2.0"
+  },
+  "devDependencies": {
+    "commander": "^3.0.2",
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "mocha": "^5.2.0"
+  },
+  "engines": {
+    "node": ">=6.8.1"
+  },
+  "main": "./lib/index",
+  "scripts": {
+    "test-helpers": "mocha test/helpers-test.js",
+    "test": "mocha test/index.js"
+  }
+}
